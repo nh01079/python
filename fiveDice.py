@@ -32,8 +32,9 @@ def main():
             #c.setFill('red')
             c.draw(win)
         if i == 3 or i == 5:
-            print(i)
-            c.draw(win)
+            # create a new circle instead of using c
+            c0= c.clone()
+            c0.draw(win)
         if i == 2 or i == 3:
             c.move(0, 0.5)
             c1 = c.clone()
